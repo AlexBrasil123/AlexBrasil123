@@ -181,29 +181,7 @@ Os cards abaixo são espaços reservados para seus repositórios reais. Substitu
 
 </div>
 
----
-
-## `05` — Activity Graph
-
-<div align="center">
-
-<a href="https://github.com/AlexBrasil123">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AlexBrasil123&bg_color=0D1117&color=C9D1D9&line=8B5CF6&point=A78BFA&area=true&area_color=30105E&hide_border=true" alt="Gráfico de atividade do GitHub"/>
-</a>
-
-</div>
-
----
-
-## `06` — GitHub Trophies
-
-<div align="center">
-
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=AlexBrasil123&theme=discord&no-frame=true&no-bg=true&margin-w=8&column=4" alt="Conquistas do GitHub"/>
-
-</div>
-
-## `08` — Vamos nos conectar?
+## `05` — Vamos nos conectar?
 
 <div align="center">
 
