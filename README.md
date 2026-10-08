@@ -203,67 +203,6 @@ Os cards abaixo são espaços reservados para seus repositórios reais. Substitu
 
 </div>
 
----
-
-## `07` — Snake Contribution
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/AlexBrasil123/AlexBrasil123/output/github-contribution-grid-snake-dark.svg" alt="Animação Snake das contribuições do GitHub"/>
-
-</div>
-
-> **Configuração necessária:** a imagem Snake só será exibida depois que o workflow abaixo for adicionado e executado com sucesso.
-
-Crie o arquivo `.github/workflows/snake.yml` no repositório `AlexBrasil123` com este conteúdo:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: write
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    steps:
-      - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: AlexBrasil123
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Publish to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Depois de salvar o arquivo:
-
-1. Acesse a aba **Actions** do repositório.
-2. Se necessário, habilite a execução de workflows.
-3. Execute **Generate Snake** usando `Run workflow`.
-4. Verifique se a branch `output` foi criada e contém os arquivos SVG.
-5. Atualize seu perfil para verificar a animação.
-
----
-
 ## `08` — Vamos nos conectar?
 
 <div align="center">
